@@ -1,5 +1,6 @@
 package com.imooc.o2o.entity;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -24,5 +25,4 @@ public class PersonInfo {
     private Integer usertype;
     private Date createTime;
     private Date lastEditTime;
-
 }

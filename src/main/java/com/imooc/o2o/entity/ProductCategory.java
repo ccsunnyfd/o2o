@@ -1,5 +1,6 @@
 package com.imooc.o2o.entity;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 

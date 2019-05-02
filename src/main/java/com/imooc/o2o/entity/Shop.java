@@ -1,5 +1,6 @@
 package com.imooc.o2o.entity;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -12,6 +13,7 @@ import java.util.Date;
  */
 @Getter
 @Setter
+@AllArgsConstructor
 public class Shop {
     private Long shopId;
     private String shopName;
