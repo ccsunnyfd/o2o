@@ -5,6 +5,7 @@ import com.imooc.o2o.entity.Area;
 import com.imooc.o2o.entity.PersonInfo;
 import com.imooc.o2o.entity.Shop;
 import com.imooc.o2o.entity.ShopCategory;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -22,6 +23,7 @@ public class ShopDaoTest extends BaseTest {
     private ShopDao shopDao;
 
     @Test
+    @Ignore
     public void testInsertShop() {
         PersonInfo owner = new PersonInfo();
         Area area = new Area();
@@ -34,6 +36,17 @@ public class ShopDaoTest extends BaseTest {
                 new Date(), null, 1, "审核中",
                 area, owner, shopCategory);
         int effectedNum = shopDao.insertShop(shop);
+        assertEquals(1, effectedNum);
+    }
+
+    @Test
+    public void testUpdateShop() {
+        Shop shop = new Shop();
+        shop.setShopId(1L);
+        shop.setShopDesc("测试描述");
+        shop.setShopAddr("测试地址");
+        shop.setLastEditTime(new Date());
+        int effectedNum = shopDao.updateShop(shop);
         assertEquals(1, effectedNum);
     }
 }
