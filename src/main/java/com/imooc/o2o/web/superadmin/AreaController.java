@@ -15,11 +15,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-/**
- * Process
- *
- * @version 1.0
- */
 @Controller
 @RequestMapping("/superadmin")
 public class AreaController {
