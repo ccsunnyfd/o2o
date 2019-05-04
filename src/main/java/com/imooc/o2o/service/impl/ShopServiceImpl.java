@@ -16,7 +16,7 @@ import org.springframework.web.multipart.commons.CommonsMultipartFile;
 import java.io.File;
 import java.util.Date;
 
-//@Service
+@Service
 public class ShopServiceImpl implements ShopService {
     @Autowired
     private ShopDao shopDao;
