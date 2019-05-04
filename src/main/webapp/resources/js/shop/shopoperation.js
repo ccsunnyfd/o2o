@@ -15,7 +15,7 @@ $(function () {
                 });
                 // 区域分类下拉列表（id + 区域名称）
                 data.areaList.map(function (item, index) {
-                    tempAreaHtml += '<option data-id="' + item.areaCategoryId + '">'
+                    tempAreaHtml += '<option data-id="' + item.areaId + '">'
                         + item.areaName + '</option>';
                 });
                 $('#shop-category').html(tempHtml);
@@ -28,7 +28,7 @@ $(function () {
             shop.shopName = $('#shop-name').val();
             shop.shopAddr = $('#shop-addr').val();
             shop.phone = $('#shop-phone').val();
-            shop.phoneDesc = $('#shop-desc').val();
+            shop.shopDesc = $('#shop-desc').val();
             shop.shopCategory = {
                 shopCategoryId: $('#shop-category').find('option').not(function () {
                     return !this.selected;
